@@ -1,10 +1,10 @@
-package com.example.currencyconverter; // Keep your package name!
+package com.example.currencyconverter;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
-import androidx.appcompat.widget.SwitchCompat; // THIS IS THE FIX FOR YOUR CRASH
+import androidx.appcompat.widget.SwitchCompat;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -13,7 +13,6 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_layout);
 
-        // This takes over that purple bar and renames it to "Settings"
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle("Settings");
         }

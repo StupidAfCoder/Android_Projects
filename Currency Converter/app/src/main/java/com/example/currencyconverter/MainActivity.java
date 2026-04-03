@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        // CRITICAL: Read saved theme and apply it BEFORE super.onCreate()
         SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
         boolean isDark = prefs.getBoolean("dark_mode", false);
         if (isDark) {
